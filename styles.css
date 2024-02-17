@@ -1,9 +1,14 @@
-*{
-    
+:root{
+    /* fonts */
+    --font: @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-    margin: 0;
-    padding: 0;
-
-    box-sizing: border-box;
-
+    /* colors */    
+    --Card--bg: hsl(0, 0%, 100%);
+    --body--bg: hsl(275, 100%, 97%);
+    --Paragraph--color:  hsl(292, 16%, 49%);
+    --Font-button--color: hsl(292, 42%, 14%);
 }
+
+/* FOOTER */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
