@@ -11,7 +11,56 @@
     --Paragraph--color:  hsl(292, 16%, 49%);
     --Font-button--color: hsl(292, 42%, 14%);
 }
+*{
+    box-sizing: border-box;
+    /* border: 1px dashed darkred; */
+}
 
+/* BACKGROUND */
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10rem 0rem;
+
+    background-image: url(images/background-pattern-desktop.svg);
+    background-color: var(--body--bg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+    font-family: var(--font-workSans);
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+    
+    width: 50vw;
+    padding: 2%;
+
+    border-radius: 5%;
+
+    background-color: var(--Card--bg);
+}
+
+.faq__header{
+    display: flex;
+    align-items: center;
+}
+faq__question--container{
+    display: flex;
+    align-items: center;
+
+    padding-left: 25px;
+}
+.faq__question--title{
+    width: fit-content;
+}
+
+.closed{
+    display: none;
+}
 /* FOOTER */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
