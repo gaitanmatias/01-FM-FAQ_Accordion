@@ -102,6 +102,7 @@ body {
   height: 35px;
 }
 .faq__answer {
+  display: none;
   margin-bottom: 25px;
 
   font-size: 18px;
@@ -116,10 +117,7 @@ hr {
 }
 
 /* JavaScript classes */
-.closed {
-  display: none;
-}
-.opened {
+.open ~ .faq__answer{
   display: flex;
 }
 
