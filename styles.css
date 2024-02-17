@@ -4,12 +4,16 @@
 :root{
     /* fonts */
     --font-workSans: "Work Sans", sans-serif;
+    --font-bold: 700;
+    --font-medium: 600;
+    --font-light: 400;
     
     /* colors */    
     --card--bg: hsl(0, 0%, 100%);
     --body--bg: hsl(275, 100%, 97%);
     --paragraph--color:  hsl(292, 16%, 49%);
     --titles-color: hsl(292, 42%, 14%);
+    --questions-hover-color: #AD28EB;
 }
 
 /* RESETS */
@@ -26,9 +30,7 @@ body{
     align-items: center;
     justify-content: center;
 
-
-    min-height: 900px;
-    padding: 10rem 0rem;
+    min-height: 1000px;
 
     /* background */
     background-image: url(images/background-pattern-desktop.svg);
@@ -48,10 +50,11 @@ body{
     
     width: 700px;
     padding: 45px;
-    
+    margin-bottom: 50px;
     border-radius: 5%;
     
     background-color: var(--card--bg);
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.1);
 }
 
 
@@ -66,8 +69,7 @@ body{
     padding: 20px 0px;
     margin-left: 15px;
 
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 56px;
     color: var(--titles-color);
 }
 
@@ -76,35 +78,44 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
+    
+    padding: 10px 0px;
 }
 .faq__question--container{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+/* card-question-hover */
+.faq__question--container:hover > .faq__question--title{
+    color: var(--questions-hover-color);
+}
 .faq__question--container:hover{
     cursor: pointer;
-    color: var();
 }
 .faq__question--title{
     width: fit-content;
     margin: 20px 0px;
     
-    font-size: 1.35em;
+    font-size: 20px;
+    font-weight: var(--font-medium);
     color: var(--titles-color);
 }
-
+.faq__question--icon{
+    height: 35px;
+}
 .faq__answer{
-    padding-right: 50px;
     margin-bottom: 25px;
 
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: var(--font-light);
     color: var(--paragraph--color);
+
+    line-height: 150%;
 }
 hr{
     border-color: transparent;
-    border-bottom-color: var(--body--bg);
+    border-bottom: 2px solid var(--body--bg);
 }
 
 /* CLOSED CLASS */
@@ -117,3 +128,8 @@ hr{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /* MEDIA QUERY */
+@media screen and (max-width: 720px){
+    .faq{
+        width: 85vw;
+    }
+}
