@@ -1,7 +1,10 @@
+/* import */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     /* fonts */
-    --font: @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+    --font-workSans: "work-sans", sans-serif;
+    
     /* colors */    
     --Card--bg: hsl(0, 0%, 100%);
     --body--bg: hsl(275, 100%, 97%);
